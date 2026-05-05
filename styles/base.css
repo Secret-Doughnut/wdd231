@@ -1,0 +1,84 @@
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 48px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #b9b4b4;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: rgb(85, 85, 224);
+}
+
+
+
+.hamburger {
+    background: none;
+    border: none;
+    color: rgb(85, 85, 224);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation a:visited {
+   color: rgb(85, 85, 224); 
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem 10px;
+    color: rgb(85, 85, 224);
+    text-decoration: none;
+    border-bottom: solid 1px rgb(128, 126, 126);
+}
+
+.navigation li.current a {
+    background-color: #e0e0e0;
+    pointer-events: none;
+}
+
+.navigation a:hover {
+    background-color: #ee9e9e;
+}
+
+h1 {
+    margin-left: 10px;
+}

@@ -3,30 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-
-
+    <meta name="description" content="A page about something. I'm not sure yet.">
+    <meta name="author" content="Secret-Doughnut">
+    <title>Mail Bunnies</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="module" src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/bunny.svg" alt="Site Logo" width="800" height="800">
-        <span>Mail Bunnies</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <div>
+            <img src="images/bunny.svg" alt="Site Logo" width="800" height="800">
+            <span>Mail Bunnies</span>
+            <button id="ham-btn" class="hamburger"></button>
+        </div>
     </header>
-    <nav id="nav-bar" class="navigation">
+    <nav id="nav-bar" class="links">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li class="current"><a href="#">Schedule</a></li>
-            <li><a href="#">About Us</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Schedule</h1>
+        <h1>Home</h1>
+        <div class="buddies">
+            <section class="about">
+                <h2>About Us</h2>
+                <p>We are a hard set of rabbits that are DETERMINED to deliver all of your mail safely and on time!</p>
+            </section>
+            <section class="photo">
+                <h2>Employee of the Month</h2>
+                <div>
+                    <img src="images/employee.webp" alt="Picture of a Blue Bunny" width="400" height="auto">
+                </div>
+            </section>
+        </div>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <nav id="buttons" class="buttons">
+                <ul>
+                    <li><button id="all">All</button></li>
+                    <li><button id="cse">CSE</button></li>
+                    <li><button id="wdd">WDD</button></li>
+                </ul>
+            </nav>
+            <nav class="sad-bars">
+                <ul id="weeping-bars">
+                </ul>
+            </nav>
+            <p id="finished"></p>
+        </section>
     </main>
     <footer>
         <div class="things">
@@ -36,14 +65,17 @@
                     alt="DeviantArt" width="16" height="16"></a>
             <a href="https://github.com/Secret-Doughnut/wdd231" target="_blank"><img src="images/github.svg"
                     alt="GitHub" width="16" height="16"></a>
-            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16"
-                    height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="linkedin" src="images/linkedin.svg"
+                    alt="Linkedin" width="16" height="16"></a>
         </div>
-        <p>copyright symbol and current year</p>
-        <p>Last Modified</p>
-        
+        <div class="copyright">
+            <span id="currentyear">©202X</span>
+            <span>* Secret Doughnut *</span>
+            <span>USA</span>
+            <p id="lastModified">Last Modified</p>
+        </div>
     </footer>
-    <script src="scripts/navigation.js"></script>
+
 </body>
 
 </html>

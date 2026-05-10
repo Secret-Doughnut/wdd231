@@ -1,121 +1,240 @@
-* {
-    font-family: "Josefin Sans", sans-serif;
-    box-sizing: border-box;
-}
-
-
+/******************************* Header ***********************/
 header {
-    display: grid;
-    grid-template-columns: 24px auto 48px;
-    padding: 5px 0 5px 10px;
-    align-items: end;
-    border-bottom: solid 1px #b9b4b4;
-    column-gap: 8px;
+    padding: 25px 25px 15px 15px;
+    display: flex;
+    background-color: #852525;
 }
 
 header img {
-    display: block;
-    width: 100%;
+    width: 16vw;
     height: auto;
-    padding-bottom: 5px;
 }
 
 header span {
-    font-size: 1.2rem;
-    color: rgb(85, 85, 224);
+    font-size: 7.8vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #bed3d8;
+    font-weight: 30px;
 }
 
+header button {
+    width: 3rem;
+    height: auto;
+    align-self: center;
+    margin-left: auto;
+}
 
+/******************************* Hamburger ***********************/
 
 .hamburger {
     background: none;
     border: none;
-    color: rgb(85, 85, 224);
-    cursor: pointer;
+    color: #bed3d8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hamburger::before {
     content: "\2630";
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .hamburger.show::before {
     content: "\00D7";
+    font-size: 3rem;
 }
 
-.navigation {
+/******************************* Nav Bar ***********************/
+
+.links {
     display: none;
 }
 
-.navigation.show {
+.links.show {
     display: block;
 }
 
-.navigation a:visited {
-   color: rgb(85, 85, 224); 
+.links a.visited {
+    color: #675fb3;
 }
 
-.navigation ul {
+.links ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.navigation a {
+.links a {
     display: block;
-    padding: 1rem 10px;
-    color: rgb(85, 85, 224);
+    font-size: 10vw;
+    color: #d0e5eb;
     text-decoration: none;
-    border-bottom: solid 1px rgb(128, 126, 126);
+    border-bottom: solid 2px #080714;
+    background-color: #675fb3;
+    padding: 1rem 75px;
 }
 
-.navigation li.current a {
-    background-color: #e0e0e0;
+.links li.current a {
+    background-color: #4c4877;
     pointer-events: none;
 }
 
-.navigation a:hover {
-    background-color: #ee9e9e;
+.links a:hover {
+    background-color: #232035;
 }
+
+/******************************* Main ***********************/
 
 h1 {
-    margin-left: 10px;
-    color: rgb(72, 72, 173);
+    font-size: 20vw;
+    margin-left: 65px;
+    color: #232035;
 }
 
+.about {
+    padding: 20px;
+}
 
-/******************************* Footer ***********************/
+.about h2 {
+    background-color: #232035;
+    color: #d0e5eb;
+    font-size: 20vw;
+    padding: 2rem;
+    display: block;
+    text-align: center;
+    margin: 0;
+    border-radius: 9px;
+}
 
-footer {
-    background-color: #dad9d9;
-    padding: 1rem 10px;
+.about p {
+    background-color: #c2c1c1;
+    margin: 0;
+    border-radius: 9px;
+    font-size: 10vw;
+    color: #232035;
+    padding: 45px;
     text-align: center;
 }
+
+.photo {
+    padding: 20px;
+}
+
+.photo div {
+    background-color: #c2c1c1;
+}
+
+.photo h2 {
+    background-color: #232035;
+    color: #d0e5eb;
+    font-size: 15vw;
+    padding: 2rem;
+    display: block;
+    text-align: center;
+    margin: 0;
+    border-radius: 9px;
+}
+
+.photo img {
+    display: block;
+    justify-self: center;
+    align-self: center;
+    padding: 80px 0;
+    width: 70vw;
+    height: auto;
+}
+
+.courses {
+    padding: 20px;
+}
+
+.courses h2 {
+    background-color: #232035;
+    color: #d0e5eb;
+    font-size: 15vw;
+    padding: 2rem;
+    display: block;
+    text-align: center;
+    margin: 0;
+    border-radius: 9px;
+}
+
+.buttons ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.4rem;
+}
+
+.buttons ul li {
+    font-size: 5vw;
+}
+
+.buttons button {
+    background-color: #c2c1c1;
+    border: none;
+    cursor: pointer;
+    padding: 25px 8vw;
+    border-radius: 30px;
+    border: solid 4px #232035;
+}
+
+.buttons button:hover {
+    background-color: #852525;
+    color: #d0e5eb;
+}
+
+.sad-bars {
+    font-size: 4rem;
+}
+
+.sad-bars ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.sad-bars li {
+    list-style-type: none;
+    margin: 2rem 0;
+    border: solid 2px #232035;
+    text-align: center;
+    background-color: #c2c1c1;
+    border-radius: 9px;
+}
+
+.sad-bars .completed {
+    background-color: #232035;
+    color: #d0e5eb;
+}
+
+.courses p {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+/******************************* Footer ***********************/
 
 .things {
     display: flex;
     justify-content: center;
-    column-gap: 8px;
-}
-
-.things a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: rgb(131, 131, 131) dashed 1px;
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
+    column-gap: 30px;
 }
 
 .things img {
-    width: 30px;
-    height: 30px;
+    width: 10vw;
+    height: auto;
 }
 
-.things a:hover {
-    background-color: #bdbcbc;
+.things .linkedin {
+    padding-left: 24px;
 }
 
-/******************************* Name ***********************/
+.copyright {
+    font-size: 6.5vw;
+    text-align: center;
+    padding: 3rem 0 1rem 0;
+    background-color: #c2c1c1;
+    margin-top: 50px;
+    color: #232035;
+}
+

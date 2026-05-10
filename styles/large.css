@@ -1,0 +1,129 @@
+@media only screen and (min-width: 40rem) {
+       
+    header, main, nav, footer {
+        margin: 0 1rem;
+    }
+
+/******************************* Header ***********************/
+
+    header {
+        padding: 0;
+        margin-bottom: 0.03rem;
+        margin-top: 1rem;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    header span {
+        font-size: 30px;
+        padding: 0;
+    }   
+
+    .hamburger {
+        display: none;
+    }
+
+/******************************* Nav Bar ***********************/
+
+    .links {
+        display: block;
+        background-color: #675fb3;
+    }
+
+    .links ul {
+        display: flex;
+        border: solid 1px #080714;
+    }
+
+    .links a {
+        font-size: 2rem;
+        padding: 0 1rem;
+        border-bottom: 0;
+    }
+
+/******************************* Buddies (Main) ****************/
+
+    h1 {
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    .buddies {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+    
+    .about, .photo {
+        padding: 2px;
+        background-color: #c2c1c1;
+        border-radius: 9px;
+    }
+
+    .about h2, .photo h2, .courses h2 {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .about p, .photo p {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        background: none;
+    }
+
+    .photo img {
+        width: 200px;
+        padding: 1rem;
+    }
+
+/**************************** Courses (Main) ****************/
+    
+    .courses {
+        padding: 1rem 0 0.5rem 0;
+    }
+
+    .buttons a {
+        padding: 1vw;
+    }
+
+    .buttons ul li {
+        font-size: 25px;
+    }
+
+    .sad-bars ul{
+        display: flex;
+        margin-top: 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .sad-bars ul li {
+        font-size: 2rem;
+        column-gap: 9px;
+        padding: 2rem 8vw;
+    }
+
+    .courses p {
+        font-size: 1.7rem;
+    }
+
+
+
+
+/******************************* Footer ***********************/
+
+    .things img {
+        height: 4rem;
+    }
+
+    .copyright {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        height: 63px;
+    }
+
+}

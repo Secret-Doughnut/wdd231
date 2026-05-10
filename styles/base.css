@@ -14,7 +14,6 @@ header span {
     font-size: 7.8vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #bed3d8;
-    font-weight: 30px;
 }
 
 header button {
@@ -171,7 +170,6 @@ h1 {
 
 .buttons button {
     background-color: #c2c1c1;
-    border: none;
     cursor: pointer;
     padding: 25px 8vw;
     border-radius: 30px;

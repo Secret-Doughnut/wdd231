@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cards {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.cards section {
+    background-color: #bb5b5b;
+    text-align: center;
+}
+
+.cards p {
+    font-size: 22px;
+}
+
+footer {
+    padding-top: 10px;
+}

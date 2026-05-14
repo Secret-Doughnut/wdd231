@@ -1,0 +1,72 @@
+@media only screen and (min-width: 46rem) {
+
+/************************** Header ***********************/
+
+    .title span {
+        font-size: 2.7vw;
+    }
+
+    .links {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .moon {
+        display: none;
+    }
+
+    .shortcut {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 7vw;
+    }
+
+/******************************* Nav Bar ***********************/
+
+    .hello {
+        display: flex;
+        flex-direction: row;
+        background-color: #852525;
+    }
+
+    .links {
+        align-self: center;
+    }
+
+    .links a {
+        padding: 0 1px;
+        background: none;
+        border: none;
+        font-size: 2.5vw;
+    }
+
+    .links ul {
+        display: flex;
+    }
+    
+    .links ul li {
+        padding: 2vw;
+    }
+
+    .links .current a {
+        background: none;
+        border-bottom: solid #bed3d8 2px;
+    }
+
+    .shortcut {
+        display: block;
+    }
+
+    .shortcut {
+        width: 6vw;
+        height: auto;
+    }
+
+    .shortcut, .links {
+        margin-left: auto;
+    }
+}

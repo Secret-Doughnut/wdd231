@@ -18,29 +18,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wdth@87.5&display=swap" rel="stylesheet">
-    <title>Helsingborg Sweden - Chamber of Commerce</title>
+    <title>Helsingborg - Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="../scripts/navigation.js"></script>
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="images/bunny.svg" alt="Site Logo" width="800" height="800">
-            <span>Mail Bunnies</span>
-            <button id="ham-btn" class="hamburger" aria-label="hamburger menu"></button>
-        </div>
-    </header>
-    <nav id="nav-bar" class="links">
-        <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Chamber Project</a></li>
-            <li><a href="#">Final Project</a></li>
-        </ul>
-    </nav>
+    <div class="hello">
+        <header>
+            <div class="title">
+                <img src="images/sweden.webp" alt="Site Logo" width="800" height="800">
+                <span>Helsingborg - Chamber of Commerce</span>
+            </div>
+            <div class="other">
+                <button id="dark-mode" class="moon"><img src="images/darkmode.svg"></button>
+                <button id="ham-btn" class="hamburger" aria-label="hamburger menu"></button>
+            </div>
+        </header>
+        <nav id="nav-bar" class="links">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode" class="shortcut"><img src="images/darkmode.svg"></button>
+    </div>
     <main>
+        <!-- <div>
+            <button>Keynote Tickets</button>
+        </div>
         <h1>Home</h1>
         <div class="buddies">
             <section class="about">
@@ -68,9 +78,17 @@
                 </ul>
             </nav>
             <p id="finished"></p>
-        </section>
+        </section> -->
     </main>
     <footer>
+        <ul>
+            <h2>Helsingborg - Chamber of Commerce</h2>
+            <li>Storgatan 7412, 252 20 Helsingborg, Sweden</li>
+            <li>Helsingborg, Sweden 999 99</li>
+            <li>info@example.org</li>
+            <li>(999) 999-9999</li>
+        </ul>
+
         <div class="things">
             <a href="https://www.youtube.com/@purpletoy23" target="_blank"><img src="images/youtube.svg"
                     alt="YouTube Logo" width="16" height="16"></a>
@@ -81,12 +99,12 @@
             <a href="https://www.linkedin.com/" target="_blank"><img class="linkedin" src="images/linkedin.svg"
                     alt="Linkedin Logo" width="16" height="16"></a>
         </div>
-        <div class="copyright">
-            <span id="currentyear">©202X</span>
-            <span>* Secret Doughnut *</span>
-            <span>USA</span>
-            <p id="lastModified">Last Modified</p>
-        </div>
+        <ul class="wdd">
+            <li>WDD231 Class Project</li>
+            <li>Secret Doughnut</li>
+            <li id="currentyear">©20XX Helsingborg - Chamber of Commerce</li>
+            <li id="lastModified">Last Modified Placeholder</li>
+        </ul>
     </footer>
 
 </body>

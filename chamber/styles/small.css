@@ -1,0 +1,148 @@
+body {
+    padding: 15px;
+}
+
+header {
+    background: #852525;
+    padding: 10px;
+    display: flex;
+}
+
+header div {
+    display: flex;
+}
+
+/******************************* Header "Title" ***********************/
+
+header img {
+    width: 40px;
+    height: 30px;
+    display: block;
+}
+
+.title span {
+    color: #bed3d8;
+    margin-left: 18px;
+    font-size: 6vw;
+}
+
+/******************************* Header "Other" ***********************/
+
+.other {
+    margin-left: auto;
+}
+
+.other button {
+    padding: 0 10px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #bed3d8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 7vw;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.moon {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.moon img {
+    width: 8vw;
+    height: auto;
+}
+
+.shortcut {
+    display: none;
+}
+
+
+/******************************* Nav Bar ***********************/
+
+.links {
+    display: none;
+}
+
+.links.show {
+    display: block;
+}
+
+.links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #bed3d8;
+    font-size: 2rem;
+    background-color: #675fb3;
+    padding: 18px 18px 18px 55px;
+    border: solid 1px black;
+}
+
+.links a:hover {
+    background-color: #232035;
+}
+
+.links .current a {
+    background: #4c4877;
+    pointer-events: none;
+}
+
+/******************************* Footer ***********************/
+
+footer {
+    background-color: #c2c1c1;
+    margin-top: 20px;
+    padding: 5px 0 15px 20px;
+}
+
+footer h2 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+footer ul li {
+    padding: 3px 0;
+}
+
+.things {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.things .linkedin {
+    padding-left: 2px;
+}
+
+.things a {
+    padding: 0 10px;
+}
+
+.things img {
+    width: 40px;
+    height: auto;
+}

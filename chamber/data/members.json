@@ -1,0 +1,60 @@
+{
+    "businessData": [
+        {
+            "companyName": "Birthday Planner Firm",
+            "companyAddress": "Helsingborg, Sweden",
+            "companyNumber": "(123) 456-7890",
+            "companyWebsite": "BirthdayPlanner.com",
+            "companyImage": "../images/blowberry.webp",
+            "membershipLevel": 2
+        },
+        {
+            "companyName": "Burto's Pizza Place",
+            "companyAddress": "Helsingborg, Sweden",
+            "companyNumber": "(555) 999-9999",
+            "companyWebsite": "BurtoPizza.com",
+            "companyImage": "../images/flyingpizza.webp",
+            "membershipLevel": 1
+        },
+        {
+            "companyName": "Fountain Works",
+            "companyAddress": "Helsingborg, Sweden",
+            "companyNumber": "(555) 810-1214",
+            "companyWebsite": "Fountainworks.com",
+            "companyImage": "../images/fountain.webp",
+            "membershipLevel": 1
+        },
+        {
+            "companyName": "Darts Ahoy",
+            "companyAddress": "Helsingborg, Sweden",
+            "companyNumber": "(555) 121-5182",
+            "companyWebsite": "Dartsahoy.com",
+            "companyImage": "../images/livingdarts.webp",
+            "membershipLevel": 1
+        },
+        {
+            "companyName": "Marching Birds",
+            "companyAddress": "Helsingborg, Sweden",
+            "companyNumber": "(555) 216-2024",
+            "companyWebsite": "Marchingbirds.com",
+            "companyImage": "../images/marchingduty.webp",
+            "membershipLevel": 3
+        },
+        {
+            "companyName": "The Message People",
+            "companyAddress": "Helsingborg, Sweden",
+            "companyNumber": "(555) 152-0253",
+            "companyWebsite": "Themessagepeople.com",
+            "companyImage": "../images/messageholders.webp",
+            "membershipLevel": 2
+        },
+        {
+            "companyName": "Tree Happy!",
+            "companyAddress": "Helsingborg, Sweden",
+            "companyNumber": "(555) 182-4303",
+            "companyWebsite": "Treehappy.com",
+            "companyImage": "../images/treeclimbing.webp",
+            "membershipLevel": 1
+        }
+    ]
+}

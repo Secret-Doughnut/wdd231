@@ -1,6 +1,7 @@
 const navbutton = document.querySelector('#ham-btn');
 const navbar = document.querySelector('#nav-bar');
 const currentyear = document.querySelector('#currentyear');
+const modified = document.querySelector('#lastModified');
 const fictional = document.querySelector('#fictional');
 const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
@@ -14,7 +15,7 @@ navbutton.addEventListener('click', () => {
 
 currentyear.innerHTML = `<span> ©${today.getFullYear()} Helsingborg - Chamber of Commerce<span>`
 
-// modified.innerHTML = document.lastModified
+modified.innerHTML = document.lastModified
 
 async function getBusinessData() {
     const response = await fetch("./data/members.json");

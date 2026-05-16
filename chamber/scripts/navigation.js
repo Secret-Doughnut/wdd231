@@ -35,8 +35,6 @@ const displayBusinesses = (businessData) => {
         let businessEmail = document.createElement('li');
         let businessPhone = document.createElement('li');
         let businessWebsite = document.createElement('li');
-
-        fictional.classList.add('list')
         
         businessName.textContent = `${data.companyName}`;
         businessCatchphrase.textContent = `${data.catchphrase}`;

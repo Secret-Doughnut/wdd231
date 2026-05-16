@@ -222,6 +222,7 @@ footer ul li {
 }
 
 .grid img {
+    display: block;
     height: 75px;
     width: auto;
     margin: 14px 0 10px 10px;

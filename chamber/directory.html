@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script type="module" src="../scripts/navigation.js"></script>
+    <script type="module" src="scripts/navigation.js"></script>
 </head>
 
 <body>
@@ -39,8 +39,8 @@
         </header>
         <nav id="nav-bar" class="links">
             <ul>
-                <li class="current"><a href="#">Home</a></li>
-                <li><a href="#">Directory</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
@@ -48,37 +48,12 @@
         <button id="dark-mode" class="shortcut"><img src="images/darkmode.svg"></button>
     </div>
     <main>
-        <!-- <div>
-            <button>Keynote Tickets</button>
+        <div class="switch">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
         </div>
-        <h1>Home</h1>
-        <div class="buddies">
-            <section class="about">
-                <h2>About Us</h2>
-                <p>We are a hard set of rabbits that are DETERMINED to deliver all of your mail safely and on time!</p>
-            </section>
-            <section class="photo">
-                <h2>Employee of the Month</h2>
-                <div>
-                    <img src="images/employee.webp" alt="Picture of a Blue Bunny" width="400" height="400">
-                </div>
-            </section>
+        <div id="fictional" class="grid fictional">
         </div>
-        <section class="courses">
-            <h2>Web Certificate Courses</h2>
-            <nav id="buttons" class="buttons">
-                <ul>
-                    <li><button id="all">All</button></li>
-                    <li><button id="cse">CSE</button></li>
-                    <li><button id="wdd">WDD</button></li>
-                </ul>
-            </nav>
-            <nav class="sad-bars">
-                <ul id="weeping-bars">
-                </ul>
-            </nav>
-            <p id="finished"></p>
-        </section> -->
     </main>
     <footer>
         <ul>
@@ -102,7 +77,7 @@
         <ul class="wdd">
             <li>WDD231 Class Project</li>
             <li>Secret Doughnut</li>
-            <li id="currentyear">©20XX Helsingborg - Chamber of Commerce</li>
+            <li id="currentyear">©20XX</li>
             <li id="lastModified">Last Modified Placeholder</li>
         </ul>
     </footer>

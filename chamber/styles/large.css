@@ -70,3 +70,20 @@
         margin-left: auto;
     }
 }
+
+@media only screen and (min-width: 501px) {
+
+    .list section {
+        flex-wrap: nowrap;
+    }
+
+    .list ul {
+        margin-top: 17px;
+    }
+
+    .list h2 {
+        padding-left: 10px;
+    }
+}
+    
+

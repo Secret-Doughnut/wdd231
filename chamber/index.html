@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to the Chamber of Commerce for Helsingborg! A place where we keep local businesses in the know of what's going on in the local area!">
+    <meta name="author" content="Secret Doughnut">
+    <meta property="og:title" content="Helsingborg Sweden - Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover a site made for businesses in the local area to keep in touch with one another.">
+    <meta property="og:image" content="https://secret-doughnut.github.io/wdd231/chamber/images/helsingborg.webp">
+    <meta property="og:url" content="https://secret-doughnut.github.io/wdd231/index.html">
+    <link rel="icon" href="images/sweden.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wdth@87.5&display=swap" rel="stylesheet">
+    <title>Helsingborg - Chamber of Commerce (Home)</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="module" src="scripts/navigation.js"></script>
+</head>
+
+<body>
+    <div class="hello">
+        <header>
+            <div class="title">
+                <img src="images/sweden.webp" alt="Site Logo" width="800" height="800">
+                <span>Helsingborg - Chamber of Commerce</span>
+            </div>
+            <div class="other">
+                <button id="dark-mode" class="moon" aria-label="dark mode button"><img src="images/darkmode.svg"
+                        alt="Filled in moon icon"></button>
+                <button id="ham-btn" class="hamburger" aria-label="hamburger menu"></button>
+            </div>
+        </header>
+        <nav id="nav-bar" class="links">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="shortcut" class="shortcut" aria-label="dark mode button"><img src="images/darkmode.svg"
+                alt="Filled in moon icon"></button>
+    </div>
+    <main>
+        <h1>Directory</h1>
+        <div class="switch">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <div id="fictional" class="grid fictional">
+        </div>
+    </main>
+    <footer>
+        <h2>Helsingborg - Chamber of Commerce</h2>
+        <ul>
+            <li>Storgatan 7412, 252 20 Helsingborg, Sweden</li>
+            <li>Helsingborg, Sweden 999 99</li>
+            <li>info@example.org</li>
+            <li>(999) 999-9999</li>
+        </ul>
+
+        <div class="things">
+            <a href="https://www.youtube.com/@purpletoy23" target="_blank"><img src="images/youtube.svg"
+                    alt="YouTube Logo" width="16" height="16"></a>
+            <a href="https://www.deviantart.com/superjets" target="_blank"><img src="images/deviantart.svg"
+                    alt="DeviantArt Logo" width="16" height="16"></a>
+            <a href="https://github.com/Secret-Doughnut/wdd231" target="_blank"><img src="images/github.svg"
+                    alt="GitHub Logo" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="linkedin" src="images/linkedin.svg"
+                    alt="Linkedin Logo" width="16" height="16"></a>
+        </div>
+        <ul class="wdd">
+            <li>WDD231 Class Project</li>
+            <li>Secret Doughnut</li>
+            <li id="currentyear">©20XX</li>
+            <li id="lastModified">Last Modified Placeholder</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

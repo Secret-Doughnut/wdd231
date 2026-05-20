@@ -84,6 +84,17 @@
     .list h2 {
         padding-left: 10px;
     }
+
+/*********************** Hero Image Stuff ***********************/
+
+    .hero-image p {
+        font-size: 250%;
+    }
+
+    .hero-image button {
+        width: 400px;
+        height: 60px;
+        font-size: 50px;
+    }
 }
-    
 

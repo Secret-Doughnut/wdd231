@@ -280,9 +280,7 @@ footer ul li {
 
 .hero-image {
     background-image: url("../images/helsingborg.webp");
-    height: 50vw;
-    width: auto;
-    background-repeat: no-repeat;
+    height: 300px;
     display: grid;
 }
 

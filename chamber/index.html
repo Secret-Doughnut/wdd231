@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script type="module" src="scripts/navigation.js"></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
@@ -48,10 +48,26 @@
                 alt="Filled in moon icon"></button>
     </div>
     <main>
-        <h1>Directory</h1>
-        <div class="switch">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <div class="hero-image">
+            <p>Come join our Chamber of Commerce now!</p>
+            <button>Join now</button>
+        </div>
+        <h1>Home</h1>
+        <div class="event">
+            <h2>Events</h2>
+            <p>I'm not sure what events to make up, so... HERE YOU GO! Some random words that tell you absolutely
+                nothing about an event!</p>
+        </div>
+        <div class="weather-now">
+            <h2>Current Weather</h2>
+            <p id="temperature">Temperature</p>
+            <p id="description">Description</p>
+        </div>
+        <div class="weather-soon">
+            <h2>Weather Forecast</h2>
+            <p id="today">Today</p>
+            <p id="tomorrow">Tomorrow</p>
+            <p id="next-week">Whatever day is after tomorrow</p>
         </div>
         <div id="fictional" class="grid fictional">
         </div>

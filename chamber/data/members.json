@@ -15,7 +15,7 @@
             "companyNumber": "(555) 999-9999",
             "companyWebsite": "BurtoPizza.com",
             "companyImage": "./images/flyingpizza.webp",
-            "membershipLevel": 1,
+            "membershipLevel": 2,
             "catchphrase": "Fresh delicious pizza!"
         },
         {
@@ -33,7 +33,7 @@
             "companyNumber": "(555) 121-5182",
             "companyWebsite": "Dartsahoy.com",
             "companyImage": "./images/livingdarts.webp",
-            "membershipLevel": 1,
+            "membershipLevel": 3,
             "catchphrase": "Ahoy those darts!"
         },
         {
@@ -42,7 +42,7 @@
             "companyNumber": "(555) 216-2024",
             "companyWebsite": "Marchingbirds.com",
             "companyImage": "./images/marchingduty.webp",
-            "membershipLevel": 3,
+            "membershipLevel": 1,
             "catchphrase": "March, march, march and march!"
         },
         {
@@ -60,7 +60,7 @@
             "companyNumber": "(555) 182-4303",
             "companyWebsite": "Treehappy.com",
             "companyImage": "./images/treeclimbing.webp",
-            "membershipLevel": 1,
+            "membershipLevel": 2,
             "catchphrase": "We are tree happy to help!"
         }
     ]

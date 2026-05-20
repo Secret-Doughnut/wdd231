@@ -275,3 +275,69 @@ footer ul li {
 .list li {
     padding: 0 10px;
 }
+
+/*********************** Hero Image Stuff ***********************/
+
+.hero-image {
+    background-image: url("../images/helsingborg.webp");
+    height: 50vw;
+    width: auto;
+    background-repeat: no-repeat;
+    display: grid;
+}
+
+.hero-image p {
+    background-color: rgba(232, 245, 113, 0.8);
+    padding: 15px;
+    margin: auto 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hero-image button {
+    height: 30px;
+    width: 200px;
+    justify-self: center;
+}
+
+/*********************** Event Card Stuff ***********************/
+
+.event {
+    background-color: #c2c1c1;
+    max-width: 300px;
+    min-height: 300px;
+}
+
+.event h2 {
+    background-color: rgb(24, 24, 71);
+    color: #bed3d8;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.event p {
+    margin: 0;
+    padding: 10vh 5vw 10vh 5vw;
+    text-align: center;
+    font-size: 25px;
+}
+
+/********************* Weather Stuff ***********************/
+
+.weather-now, .weather-soon {
+    background-color: #c2c1c1;
+    min-height: 300px;
+    max-width: 300px;
+}
+
+.weather-now h2, .weather-soon h2 {
+    background-color: #232035;
+    text-align: center;
+    color: #bed3d8;
+}
+
+.weather-now p, .weather-soon p {
+    padding: 30px 20px;
+    font-size: 24px;
+}

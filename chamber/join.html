@@ -49,6 +49,7 @@
     </div>
     <main>
         <form method="get" action="thankyou.html" class="main-form">
+            <h1>Join Now!</h1>
             <fieldset>
                 <label for="first-name">
                     <span>First Name</span>
@@ -92,7 +93,7 @@
             <fieldset>
                 <label for="drop">
                     <span>Membership Level</span>
-                    <select>
+                    <select required name="membership" title="Choose a membership level to sign up for" id="drop">
                         <option value="" disabled selected>Select a membership level</option>
                         <option value="non-profit">Non-Profit</option>
                         <option value="bronze">Bronze</option>
@@ -112,7 +113,7 @@
                 </label>
             </fieldset>
             <fieldset>
-                <input type="Send Information" value="Testing">
+                <input type="submit" value="Join Now">
             </fieldset>
         </form>
         <div class="info">

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Welcome to the Chamber of Commerce for Helsingborg! A place where we keep local businesses in the know of what's going on in the local area!">
+        content="Welcome to the Chamber of Commerce for Helsingborg! Here is the form page to join our lovely community!">
     <meta name="author" content="Secret Doughnut">
     <meta property="og:title" content="Helsingborg Sweden - Chamber of Commerce">
     <meta property="og:description"
@@ -48,25 +48,27 @@
                 alt="Filled in moon icon"></button>
     </div>
     <main>
+        <h1>Join Now!</h1>
         <form method="get" action="thankyou.html" class="main-form">
-            <h1>Join Now!</h1>
             <fieldset>
                 <label for="first-name">
                     <span>First Name</span>
-                    <input type="text" name="firstname" id="first-name" autocomplete="given-name" required>
+                    <input type="text" name="firstname" id="first-name" title="First given name"
+                        autocomplete="given-name" required>
                 </label>
             </fieldset>
             <fieldset>
                 <label for="last-name">
                     <span>Last Name</span>
-                    <input type="text" name="lastname" id="last-name" autocomplete="family-name" required>
+                    <input type="text" name="lastname" title="Given family name" id="last-name"
+                        autocomplete="family-name" required>
                 </label>
             </fieldset>
             <fieldset>
                 <label for="organizational-title">
                     <span>Organizational Title</span>
-                    <input type="text" name="title" id="organizational-title" autocomplete="organization-title"
-                        pattern="[A-Za-z -]{7,}">
+                    <input type="text" name="title" title="Enter your title within your organization"
+                        id="organizational-title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
                 </label>
             </fieldset>
             <fieldset>
@@ -108,12 +110,11 @@
                     <textarea title="Enter some info about your business" name="description"
                         id="business-description"></textarea>
                 </label>
-                <label for="timestamp">
-                    <input hidden name="time" id="timestamp">
+                <input type="hidden" name="time">
                 </label>
             </fieldset>
             <fieldset>
-                <input type="submit" value="Join Now">
+                <button type="submit">Join Now!</button>
             </fieldset>
         </form>
         <div class="info">

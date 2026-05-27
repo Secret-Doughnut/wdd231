@@ -7,10 +7,18 @@ const currentyear = document.querySelector('#currentyear');
 const modified = document.querySelector('#lastModified');
 const weepingbars = document.querySelector('#weeping-bars');
 const finished = document.querySelector('#finished');
+const modal = document.querySelector('#details');
+const close = document.querySelector('#close');
+const modalTitle = document.querySelector('#details h2');
+const modalCredits = document.querySelector('#credits');
+const modalCertificate = document.querySelector('#certificate');
+const modalDescription = document.querySelector('#description');
+const modalTechnology = document.querySelector('#technology');
 
 const all = document.querySelector('#all');
 const cse = document.querySelector('#cse');
 const wdd = document.querySelector('#wdd');
+
 
 
 const today = new Date();
@@ -27,7 +35,7 @@ modified.innerHTML = document.lastModified
 
 courses.forEach(item => {
     const li = document.createElement('li');
-    const a = document.createElement('a');
+    const a = document.createElement('button');
     a.textContent = `${item.subject} ${item.number}`
 
     li.appendChild(a);
@@ -51,7 +59,7 @@ all.addEventListener('click', () => {
     
     courses.forEach(item => {
     const li = document.createElement('li');
-    const a = document.createElement('a');
+    const a = document.createElement('button');
     a.textContent = `${item.subject} ${item.number}`
 
     li.appendChild(a);
@@ -76,7 +84,7 @@ cse.addEventListener('click', () => {
 
     coding.forEach(item => {
         const li = document.createElement('li');
-        const a = document.createElement('a');
+        const a = document.createElement('button');
         a.textContent = `${item.subject} ${item.number}`
 
         li.appendChild(a);
@@ -100,7 +108,7 @@ wdd.addEventListener('click', () => {
 
     coding.forEach(item => {
         const li = document.createElement('li');
-        const a = document.createElement('a');
+        const a = document.createElement('button');
         a.textContent = `${item.subject} ${item.number}`
 
         li.appendChild(a);
@@ -117,3 +125,40 @@ wdd.addEventListener('click', () => {
     });
 });
 
+// modal.addEventListener('click', (event) => {
+//     if (event.target === modal) {
+//         modal.close();
+//     }
+// });
+
+close.addEventListener('click', () => {
+    modal.close();
+})
+
+weepingbars.addEventListener('click', (event) => {
+    
+    let answer = event.target;
+
+    courses.forEach(item => {
+        let fullCourse = `${item.subject} ${item.number}`;
+
+        // console.log(fullCourse);
+        console.log(`answer is ${answer.textContent}`);
+        
+        if (answer.textContent.includes(item.number)) {
+            modalTitle.textContent = ` ${item.title}`;
+            modalCredits.textContent = `Amount of Credits: ${item.credits}`;
+            modalCertificate.textContent = `${item.certificate}`;
+            modalDescription.textContent = `${item.description}`;
+            modalTechnology.textContent = `${item.technology}`;
+            console.log("True!");
+        }
+        else {
+            console.log("Not close enough!");
+        }
+    })
+    
+    modal.showModal();
+
+
+})

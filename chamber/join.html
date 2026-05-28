@@ -67,9 +67,9 @@
                 </fieldset>
                 <fieldset>
                     <label for="organizational-title">
-                        <span>Organizational Title</span>
+                        <span>Organizational Title (At least 7 characters)</span>
                         <input type="text" name="title" title="Enter your title within your organization"
-                            id="organizational-title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+                            id="organizational-title" autocomplete="organization-title" pattern="[A-Za-z]+.{7,}">
                     </label>
                 </fieldset>
                 <fieldset>
@@ -114,7 +114,7 @@
                     <input type="hidden" name="timestamp" id="timestamp">
                 </fieldset>
                 <fieldset>
-                    <button type="submit">Join Now!</button>
+                    <button id="submit" type="submit">Join Now!</button>
                 </fieldset>
             </form>
             <div class="info">

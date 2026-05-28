@@ -380,6 +380,7 @@ footer ul li {
     text-align: center;
     border-radius: 20px;
     min-height: 100px;
+    animation: attention 3s infinite alternate ease-in-out;
 }
 
 .info div h2 {
@@ -394,6 +395,11 @@ footer ul li {
     font-size: 20px;
 }
 
+@keyframes attention {
+    0% {background-color: rgba(144, 238, 144, 0.623);}
+    100% {background-color: lightgreen;}
+}
+
 /********************* Dialog Stuff ***********************/
 
 .details h2 {
@@ -401,4 +407,24 @@ footer ul li {
     color: #bed3d8;
     text-align: center;
     border-radius: 20px;
+}
+
+/********************* Thank You! ***********************/
+
+.done {
+    background-color: rgba(144, 238, 144, 0.582);
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+.done p {
+    margin-left: 30px;
+}
+
+.joke {
+    padding-top: 20px;
+}
+
+#time {
+    padding-bottom: 20px;
 }

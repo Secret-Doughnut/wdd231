@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/index.js" defer></script>
+    <script type="module" src="scripts/thanks.js"></script>
 </head>
 
 <body>
@@ -38,9 +38,9 @@
         </header>
         <nav id="nav-bar" class="links">
             <ul>
-                <li class="current"><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a href="join.html">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
@@ -48,8 +48,17 @@
                 alt="Filled in moon icon"></button>
     </div>
     <main>
-        <div>
-            <p>Thank you for all of your valuable info!</p>
+        <div class="done">
+            <p class="joke">Thank you for all of your valuable info! (Just kidding, we don't actually store your data)
+            </p>
+            <p id="first">First Name Placeholder</p>
+            <p id="title">Title Placeholder</p>
+            <p id="email">Email Placeholder</p>
+            <p id="number">Number Placeholder</p>
+            <p id="business">Business Placeholder</p>
+            <p id="level">Membership Placeholder</p>
+            <p id="desc">Description Placeholder</p>
+            <p id="time">Timestamp Placeholder</p>
         </div>
     </main>
     <footer>

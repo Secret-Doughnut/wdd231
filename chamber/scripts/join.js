@@ -11,6 +11,9 @@ const modalPrice = document.querySelector('#price');
 const modalSpotlight = document.querySelector('#spotlight');
 const modalDiscount = document.querySelector('#discount');
 const infoButton = document.querySelectorAll('.info-button');
+const time = document.querySelector('#timestamp');
+const submit = document.querySelector('#submit');
+
 
 const today = new Date();
 currentyear.innerHTML = `<span> ©${today.getFullYear()}<span>`;
@@ -59,4 +62,8 @@ infoButton.forEach((button) => {
             modalDiscount.textContent = `Future Discounts: ${membership[3].discount}`
         }
     })
+})
+
+submit.addEventListener('click', () => {
+    time.value = Math.floor(Date.now());
 })

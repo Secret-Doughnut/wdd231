@@ -102,5 +102,20 @@
         height: 50px;
         font-size: 30px;
     }
+
+/********************* Level Info ***********************/
+
+    .join {
+        display: flex;
+    }
+
+    .info {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .main-form {
+        width: 40%;
+    }
 }
 

@@ -339,3 +339,66 @@ footer ul li {
     padding: 30px 20px;
     font-size: 24px;
 }
+
+/********************* Form Stuff ***********************/
+
+.main-form {
+    border: 2px black solid;
+    background-color: #f0cdcd;
+}
+
+.main-form fieldset {
+    border: none;
+}
+
+.main-form span {
+    display: block;
+}
+
+.main-form select {
+    width: 202px;
+    font-size: 20px;
+    height: 37px;
+}
+
+.main-form textarea {
+    resize: none;
+    width: 197px;
+    height: 100px;
+}
+
+.main-form button {
+    width: 110px;
+    height: 48px;
+    font-size: 20px;
+}
+
+/********************* Level Info ***********************/
+
+.info div {
+    background-color: lightgreen;
+    text-align: center;
+    border-radius: 20px;
+    min-height: 100px;
+}
+
+.info div h2 {
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.info div button {
+    margin-bottom: 10px;
+    height: 50px;
+    width: 140px;
+    font-size: 20px;
+}
+
+/********************* Dialog Stuff ***********************/
+
+.details h2 {
+    background-color: #232035;
+    color: #bed3d8;
+    text-align: center;
+    border-radius: 20px;
+}

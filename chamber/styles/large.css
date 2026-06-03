@@ -2,6 +2,7 @@
 
 /************************** Header ***********************/
 
+
     .title span {
         font-size: 2.7vw;
     }
@@ -75,6 +76,10 @@
         grid-template-columns: 2fr 1fr 1fr;
         gap: 10px;
     }
+
+    #thing {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (min-width: 501px) {
@@ -120,12 +125,12 @@
 
 /********************* Interests Cards ***********************/
 
-    #cards {
+
+    #thing {
         display: grid;
-        grid-template-columns: 1fr 1fr;
     }
 
-    #cards section {
+    #thing section {
         margin: 20px;
     }
 }

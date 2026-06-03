@@ -1,7 +1,6 @@
-@media only screen and (min-width: 60rem) {
-    
+@media only screen and (min-width: 38rem) {
 
-    #cards section {
+    #thing section {
 
     grid-template-areas: 
     "photo name"
@@ -10,7 +9,7 @@
     "photo author";
     }
 
-    #cards img {
+    #thing figure {
         width: 300px;
     }
 

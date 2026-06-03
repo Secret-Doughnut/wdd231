@@ -24,6 +24,7 @@ const displayLocationData = () => {
         const locationAddress = document.createElement('p');
         const locationDescription = document.createElement('p');
         const imageCredit = document.createElement('a');
+        const imageHolder = document.createElement('figure');
         const imageImage = document.createElement('img');
         
         locationName.textContent = `${data.name}`;
@@ -40,11 +41,12 @@ const displayLocationData = () => {
         imageCredit.href = `${data.credit}`;
         imageCredit.textContent = `Image Author: ${data.author}`
 
+        imageHolder.appendChild(imageImage);
         card.appendChild(locationName);
         card.appendChild(locationAddress);
         card.appendChild(locationDescription);
         card.appendChild(imageCredit);
-        card.appendChild(imageImage);
+        card.appendChild(imageHolder);
         cardHolder.appendChild(card);
     })
 }

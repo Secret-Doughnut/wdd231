@@ -453,12 +453,15 @@ footer ul li {
     grid-area: name;
 }
 
-#thing img {
+#thing figure {
     grid-area: photo;
-    width: 100%;
-    height: auto;
     padding: 0;
     margin: 0;
+}
+
+#thing img {
+    width: 100%;
+    height: auto;
 }
 
 #thing p:first-of-type {

@@ -17,6 +17,8 @@ currentyear.innerHTML = `<span> ©${today.getFullYear()} Helsingborg - Chamber o
 
 modified.innerHTML = document.lastModified
 
+
+
 const displayLocationData = () => {
     discover.forEach((data) => {
         const card = document.createElement('section');
@@ -26,10 +28,12 @@ const displayLocationData = () => {
         const imageCredit = document.createElement('a');
         const imageHolder = document.createElement('figure');
         const imageImage = document.createElement('img');
+        const fakeButton = document.createElement('button');
         
         locationName.textContent = `${data.name}`;
         locationAddress.textContent = `${data.address}`;
         locationDescription.textContent = `${data.description}`;
+        fakeButton.textContent = "Learn More";
 
 
         imageImage.setAttribute('src', data.picture);
@@ -41,12 +45,14 @@ const displayLocationData = () => {
         imageCredit.href = `${data.credit}`;
         imageCredit.textContent = `Image Author: ${data.author}`
 
+
         imageHolder.appendChild(imageImage);
         card.appendChild(locationName);
         card.appendChild(locationAddress);
         card.appendChild(locationDescription);
         card.appendChild(imageCredit);
         card.appendChild(imageHolder);
+        card.appendChild(fakeButton);
         cardHolder.appendChild(card);
     })
 }

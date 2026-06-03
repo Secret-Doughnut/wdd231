@@ -76,10 +76,6 @@
         grid-template-columns: 2fr 1fr 1fr;
         gap: 10px;
     }
-
-    #thing {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 @media only screen and (min-width: 501px) {
@@ -132,6 +128,13 @@
 
     #thing section {
         margin: 20px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+
+    #thing {
+        grid-template-columns: 1fr 1fr;
     }
 }
 

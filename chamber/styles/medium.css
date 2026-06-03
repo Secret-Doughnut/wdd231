@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 40rem) {
 
     #thing section {
 
@@ -11,6 +11,10 @@
 
     #thing figure {
         width: 300px;
+    }
+
+    #thing button {
+        grid-column: 2/7;
     }
 
 }

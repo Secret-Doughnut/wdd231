@@ -429,5 +429,65 @@ footer ul li {
     padding-bottom: 20px;
 }
 
-/********************* Thank You! ***********************/
+/********************* Interests Cards ***********************/
 
+#thing section {
+    background-color: #d6e8ec;
+    color: rgb(9, 9, 41);
+    text-align: left;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    margin: 20px 0;
+
+    grid-template-areas: 
+    "name"
+    "photo"
+    "description"
+    "location"
+    "author";
+}
+
+#thing section h2 {
+    padding-left: 20px;
+    grid-area: name;
+}
+
+#thing img {
+    grid-area: photo;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#thing p:first-of-type {
+    grid-area: location;
+    padding: 0 20px;
+}
+
+#thing p:last-of-type {
+    grid-area: description;
+    padding: 0 20px;
+}
+
+#thing a {
+    display: block;
+    color: rgb(9, 9, 41);
+    height: 48px;
+    grid-area: author;
+    padding: 0 20px;
+}
+
+#thing a:visited {
+    color: rgb(9, 9, 41);
+}
+
+/********************* Notice ***********************/
+
+.notice {
+    background-color: #d6e8ec;
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 15px
+}

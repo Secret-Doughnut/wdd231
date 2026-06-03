@@ -117,5 +117,16 @@
     .main-form {
         width: 40%;
     }
+
+/********************* Interests Cards ***********************/
+
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #cards section {
+        margin: 20px;
+    }
 }
 

@@ -5,8 +5,10 @@ const navbar = document.querySelector('#nav-bar');
 const currentyear = document.querySelector('#currentyear');
 const modified = document.querySelector('#lastModified');
 const cardHolder = document.querySelector('#thing');
+const visitShower = document.querySelector('#visit');
 
 const today = new Date();
+let compare = Date.now();
 
 navbutton.addEventListener('click', () => {
     navbutton.classList.toggle('show');
@@ -17,6 +19,99 @@ currentyear.innerHTML = `<span> ©${today.getFullYear()} Helsingborg - Chamber o
 
 modified.innerHTML = document.lastModified
 
+const displayMessage = () => {
+    let lastDate = localStorage.getItem("last-date-visited") || 0;
+    
+    let magicNumber = 86400000;
+    let answer = compare - lastDate;
+
+    if (lastDate == 0) {
+        visitShower.textContent = `Welcome! Let us know if you have any questions.`
+    }
+    else if (answer < magicNumber) {
+        visitShower.textContent = `Back so soon! Awesome!`
+    }
+    else if (answer > magicNumber) {
+
+        let daysApart = lastDate / magicNumber;
+
+        if (daysApart == 1) {
+            visitShower.textContent = `You last visited ${daysApart} day ago.`;
+        }
+        else {
+            visitShower.textContent = `You last visited ${daysApart} days ago.`;
+        }
+        
+    }
+    
+    localStorage.setItem("last-date-visited", compare);
+}
+
+// const doDateMath = (pervious) => {
+//     let extraDays = 0;
+    
+//     let annoying = pervious.split(" ");
+//     let newDate = compare.split(" ");
+//     console.log(annoying);
+//     console.log(newDate);
+//     console.log(1);
+//     if (annoying[2] != newDate[2]) {
+//         extraDays += Number(newDate[2]) - Number(annoying[2]);
+//         extraDays * 
+//     }
+
+// }
+
+// const displayMessage = () => {
+//     let lastDate = localStorage.getItem("last-date-visited") || 0;
+
+//     if (lastDate == 0) {
+//         visitShower.textContent = `Welcome! Let us know if you have any questions.`
+//     }
+//     // else if (compare == lastDate) {
+//     //     visitShower.textContent = `Back so soon! Awesome!`
+//     // }
+//     else { 
+//         let pieces = lastDate.split(" ");
+//         let otherPieces = compare.split(" ");
+//         const answer = getTimeGap(pieces, otherPieces);
+        
+//         visitShower.textContent = `You last visited ${answer} ago.`
+//     }
+
+//     // localStorage.setItem("last-date-visited", compare);
+// }
+
+// const getTimeGap = (pieces, otherPieces) => {
+    
+
+//     //Previous Date
+//     console.log(`${pieces[1]} pieces`);
+//     //Current Date
+//     console.log(`${otherPieces[1]} otherPieces`);
+
+//     //if previous day is LESS then current day.
+//     if (pieces[1] < otherPieces[1]) {
+//         //Previous day minus current day.
+//         let difference = pieces[1] - otherPieces[1];
+//         console.log(`${difference} THis is difference`)
+//         if (difference == 1) {
+//             return `${difference} day`
+//         }
+//         else {
+//             return `${difference} days`
+//         }
+//     }
+//     else {
+//         let holder = [];
+//         let monthCount = otherPieces[0] - pieces[0];
+//         let monthMath = monthCount * 30;
+//         let newAnswer = Number(otherPieces[1]) + monthMath;
+//         holder.push(0, today.getDate() + newAnswer);
+
+//         getTimeGap(pieces, holder);
+//     }
+// }
 
 
 const displayLocationData = () => {
@@ -58,3 +153,4 @@ const displayLocationData = () => {
 }
 
 displayLocationData();
+displayMessage();

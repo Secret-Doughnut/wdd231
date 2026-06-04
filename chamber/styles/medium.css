@@ -17,4 +17,8 @@
         grid-column: 2/7;
     }
 
+    #thing img:hover {
+        height: 225px;
+    }
+
 }

@@ -497,9 +497,14 @@ footer ul li {
 
 /********************* Notice ***********************/
 
-.notice {
+.notice, #visit {
     background-color: #d6e8ec;
     padding: 20px;
     font-size: 18px;
     margin-top: 15px
+}
+
+#visit {
+    text-align: center;
+    font-size: 30px;
 }

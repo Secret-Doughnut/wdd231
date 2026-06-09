@@ -135,3 +135,23 @@ h1 {
     margin-top: 50px;
     color: #232035;
 }
+
+/******************************* Notice ***********************/
+
+.notice h2 {
+    justify-self: center;
+    padding: 20px;
+}
+
+.notice {
+    justify-self: center;
+    max-width: 550px;
+    font-size: x-large;
+    background-color: rgb(159, 221, 241);
+}
+
+.notice p {
+    padding: 30px;
+    padding-top: 2px;
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+@media only screen and (min-width: 700px) {
+
+/******************************* Header ***********************/
+    
+    header, #hello, main, nav, footer {
+        margin: 0 1rem;
+    }
+
+    header h2 {
+        font-size: 30px;
+        padding: 0;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+/******************************* Main ***********************/
+
+    #clickme {
+        min-width: 700px;
+        justify-self: center;
+    }
+
+
+/******************************* Nav Bar ***********************/
+
+    #hello {
+        display: flex;
+        flex-direction: row;
+        background-color: #722e2e;
+    }
+
+    #navigation {
+        align-self: center;
+        margin-left: auto;
+        display: block;
+    }
+
+    #navigation a {
+        padding: 0 1px;
+        background: none;
+        border: none;
+        font-size: 30px;
+    }
+
+    #navigation ul {
+        display: flex;
+    }
+
+    #navigation ul li {
+        padding: 20px;
+    }
+
+    #navigation .current a {
+        background: none;
+        border-bottom: solid #bed3d8 2px;
+    }
+
+    
+}

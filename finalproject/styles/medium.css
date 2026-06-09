@@ -1,0 +1,23 @@
+@media only screen and (min-width: 530px) {
+
+
+/******************************* Main ***********************/
+
+    #invite {
+        max-width: 500px;
+        justify-self: center;
+    }
+
+    #clickme {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+/******************************* Footer ***********************/
+
+    .copyright {
+        font-size: 25px;   
+    }
+}

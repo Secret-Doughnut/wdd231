@@ -1,0 +1,137 @@
+* {
+    font-family: "roboto";
+}
+
+/******************************* Header ***********************/
+
+header {
+    padding: 25px 25px 15px 15px;
+    display: flex;
+    background-color: #722e2e;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+header h2 {
+    font-size: 30px;
+    font-family: "roboto" sans-serif;
+    color: #bed3d8;
+}
+
+header button {
+    width: 3rem;
+    height: auto;
+    align-self: center;
+    margin-left: auto;
+}
+
+/******************************* Hamburger ***********************/
+
+#hamburger {
+    background: none;
+    border: none;
+    color: #bed3d8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hamburger::before {
+    content: "\2630";
+    font-size: 3rem;
+}
+
+#hamburger.show::before {
+    content: "\00D7";
+    font-size: 3rem;
+}
+
+/******************************* Nav Bar ***********************/
+
+#navigation {
+    display: none;
+}
+
+#navigation.show {
+    display: block;
+}
+
+#navigation a.visited {
+    color: #675fb3;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation a {
+    display: block;
+    font-size: 10vw;
+    color: #d0e5eb;
+    text-decoration: none;
+    border-bottom: solid 2px #080714;
+    background-color: #675fb3;
+    padding: 1rem 75px;
+}
+
+#navigation li.current a {
+    background-color: #4c4877;
+    pointer-events: none;
+}
+
+#navigation a:hover {
+    background-color: #232035;
+}
+
+/******************************* Main ***********************/
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: #232035;
+}
+
+#invite {
+    background-color: rgb(53, 94, 94);
+    color: #d0e5eb;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#clickme {
+    margin-top: 30px;
+}
+
+#clickme a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    background-color: rgb(165, 248, 165);
+    color: #080438;
+    font-size: 30px;
+    border-radius: 20px;
+    min-width: 200px;
+    justify-self: center;
+    margin: 20px 0;
+}
+
+#clickme a:hover {
+    background-color: rgb(53, 94, 94);
+    color: #d0e5eb;
+}
+
+
+/******************************* Footer ***********************/
+
+.copyright {
+    font-size: 20px;
+    text-align: center;
+    padding: 0.2rem 0 1rem 0;
+    background-color: #c2c1c1;
+    margin-top: 50px;
+    color: #232035;
+}

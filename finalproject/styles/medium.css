@@ -21,3 +21,29 @@
         font-size: 25px;   
     }
 }
+
+@media only screen and (min-width: 680px) {
+
+/******************************* Card ***********************/
+
+    .card:nth-child(even) {
+        position: relative;
+        margin-right: 20vw;
+    }
+
+    .card:nth-child(odd) {
+        position: relative;
+        margin-left: 20vw;
+    }
+
+    .card {
+        display: flex;
+        max-width: 700px;
+        margin: 20px;
+        justify-self: center;
+    }
+
+    .fact {
+        margin-bottom: 0;
+    }
+}

@@ -1,3 +1,6 @@
+// import { bunnyfacts } from "../data/bunnyfacts.json";
+// import { snakefacts } from "../data/snakefacts.json";
+
 const hamburger = document.querySelector('#hamburger');
 const navigation = document.querySelector('#navigation');
 const currentyear = document.querySelector('#currentyear');
@@ -12,6 +15,7 @@ const credit = document.querySelector('#credit');
 let cardHolder = document.querySelector("#basic-needs");
 let bunnyCard = document.querySelector("#bunny");
 let snakeCard = document.querySelector("#snake");
+
 
 const today = new Date();
 
@@ -47,25 +51,6 @@ async function snakeDataFetch() {
     }
 }
 
-let answer = await bunnyDataFetch();
-// console.log(answer.facts[0]);
-
-const whichAnimal = async () => {
-    let animal = "";
-    
-    if (bunnyCard) {
-    animal = await bunnyDataFetch();
-    }
-    else if (snakeCard) {
-    animal = snakeDataFetch();
-    }
-
-    return animal;
-}
-
-
-
-
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('show');
     navigation.classList.toggle('show');
@@ -79,12 +64,23 @@ close.addEventListener('click', () => {
     modal.close();
 })
 
-function createAnimalFactCard() {
-    
-    let animals = whichAnimal();
-    console.log(animals);
 
-    animals.facts.forEach(animal => {
+async function whichAnimal() {
+    if (bunnyCard) {
+    let bunnyfacts = await bunnyDataFetch();
+    console.log(bunnyfacts);
+    createAnimalFactCard(bunnyfacts);
+    }
+    else if (snakeCard) {
+    createAnimalFactCard(snakefacts);
+    }
+}
+
+
+
+function createAnimalFactCard(animals) {
+    whichAnimal();
+    animals.forEach(animal => {
         let cardContainer = document.createElement("div");
         let redBox = document.createElement("div");
         let imageContainer = document.createElement("img");
@@ -115,4 +111,30 @@ function createAnimalFactCard() {
 
 const infoButton = document.querySelectorAll('.info-button');
 
-createAnimalFactCard();
+infoButton.forEach((button) => {
+
+    button.addEventListener('click', (event) => {
+        whichAnimal();
+        console.log(button.classList[0]);
+
+        modal.showModal();
+        let bunnyCheck = bunnyfacts.find(item => item.extraClass === button.classList[0]);
+        let snakeCheck = snakefacts.find(item => item.extraClass === button.classList[0]);
+
+        if (bunnyCheck) {
+            grabAnimalCredit(bunnyCheck);
+        }
+        else if (snakeCheck) {
+            grabAnimalCredit(snakeCheck);
+        }
+
+    })
+})
+
+const grabAnimalCredit = (animal) => {
+    title.textContent = animal.title;
+    source.textContent = animal.nameOfSource;
+    source.href = animal.source;
+    credit.textContent = animal.author;
+    credit.href = animal.imageCredit;
+}

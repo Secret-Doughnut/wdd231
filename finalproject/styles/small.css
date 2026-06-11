@@ -130,7 +130,7 @@ h1 {
 .copyright {
     font-size: 20px;
     text-align: center;
-    padding: 0.2rem 0 1rem 0;
+    padding: 1.5rem 0 1rem 0;
     background-color: #c2c1c1;
     margin-top: 50px;
     color: #232035;
@@ -156,7 +156,7 @@ h1 {
     text-align: center;
 }
 
-/******************************* Notice ***********************/
+/******************************* Card ***********************/
 
 #basic-needs p {
     font-size: 20px;
@@ -171,6 +171,7 @@ h1 {
 }
 
 #basic-needs img {
+    display: block;
     justify-self: center;
 
 }
@@ -190,4 +191,23 @@ h1 {
     justify-self: center;
     width: 200px;
     height: 40px;
+}
+
+
+/******************************* Dialog ***********************/
+
+label {
+    display: block;
+    height: 48px;
+    font-size: 25px;
+}
+
+dialog p a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+dialog p a:hover {
+    border-bottom: black 2px solid;
 }

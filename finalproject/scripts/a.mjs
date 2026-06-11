@@ -7,6 +7,7 @@ const title = document.querySelector('#details h2');
 const close = document.querySelector('#close');
 const source = document.querySelector('#source');
 const credit = document.querySelector('#credit');
+const visit = document.querySelector('#visit');
 
 
 let cardHolder = document.querySelector("#basic-needs");
@@ -91,33 +92,23 @@ function createAnimalFactCard(animals) {
     });
 }
 
-let answer = await bunnyDataFetch();
+let answer = "";
+
+if (bunnyCard) {
+    answer = await bunnyDataFetch();
+}
+else if (snakeCard) {
+    answer = await snakeDataFetch();
+}
+
 createAnimalFactCard(answer);
 const infoButton = document.querySelectorAll('.info-button');
 
 
 infoButton.forEach((button) => {
     button.addEventListener('click', async () => {
-
-        
-        let animal = "";
-        // let bunnyCheck = bunnyfacts.find(item => item.extraClass === button.classList[0]);
-        // let snakeCheck = snakefacts.find(item => item.extraClass === button.classList[0]);
-
-        // if (bunnyCheck) {
-        //     grabAnimalCredit(bunnyCheck);
-        // }
-        // else if (snakeCheck) {
-        //     grabAnimalCredit(snakeCheck);
-        // }
-
-        if (bunnyCard) {
-            let bunny = await bunnyDataFetch();
-            console.log(bunny);
-            animal = bunny.find(item => item.extraClass === button.classList[0]);
-            grabAnimalCredit(animal);
-            
-        }
+        let animalCheck = answer.facts.find(item => item.extraClass === button.classList[0]);
+        grabAnimalCredit(animalCheck);
         modal.showModal();
     })
 })
@@ -128,4 +119,14 @@ const grabAnimalCredit = (animal) => {
     source.href = animal.source;
     credit.textContent = animal.author;
     credit.href = animal.imageCredit;
+}
+
+let counter = Number(localStorage.getItem("time-visited")) || 1;
+
+if (localStorage.getItem("time-visited") === null) {
+    localStorage.setItem("time-visited", 1);
+}
+else if (localStorage.getItem("time-visited")) {
+    localStorage.setItem("time-visited", counter + 1);
+    visit.textContent = `Nice to see you again! You have been here ${localStorage.getItem("time-visited")} times!`;
 }

@@ -135,6 +135,11 @@ h1 {
     color: #232035;
 }
 
+#visit {
+    max-width: 80%;
+    justify-self: center;
+}
+
 /******************************* Notice ***********************/
 
 .notice h2 {
@@ -195,10 +200,9 @@ h1 {
 
 /******************************* Dialog ***********************/
 
-label {
-    display: block;
-    height: 48px;
-    font-size: 25px;
+dialog {
+    max-width: 300px;
+    min-height: 200px;
 }
 
 dialog p a {
@@ -209,4 +213,9 @@ dialog p a {
 
 dialog p a:hover {
     border-bottom: black 2px solid;
+}
+
+dialog h2, dialog p {
+    display: block;
+    align-self: center;
 }

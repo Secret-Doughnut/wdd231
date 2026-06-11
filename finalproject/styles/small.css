@@ -160,6 +160,14 @@ h1 {
     text-align: center;
 }
 
+.notice p a {
+    text-decoration: none;
+}
+
+.notice p a:hover {
+    border-bottom: blue solid 2px;
+}
+
 /******************************* Card ***********************/
 
 #basic-needs p {

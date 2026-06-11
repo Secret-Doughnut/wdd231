@@ -19,7 +19,8 @@
     <link rel="icon" href="images/bunnyicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/form.css">
-    <script type="module" src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/thanks.js" defer></script>
 </head>
 
 <body>
@@ -40,35 +41,13 @@
             </nav>
         </div>
         <main>
-            <h1>Email Notification</h1>
-            <section>
-                <h2>Please Note</h2>
-                <p>This website was made for a collage assignment. This website is probably not getting updated in the
-                    future. We won't actually receive your email. I wish you good luck with finding cool animal facts!</p>
-            </section>
-            <div class="join">
-                <form method="get" action="thankyou.html" class="main-form">
-                    <fieldset>
-                        <label for="email">
-                            <span>Email Address</span>
-                            <input type="text" name="emailad" id="email"
-                                title="This is to send an email to let you know that we have added some new facts."
-                                required>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="first-name">
-                            <span>Name (optional)</span>
-                            <input type="text" name="givenname"
-                                title="This would be used as a little personalization thing. Like, to have 'Hello [name]! We have updated the site'"
-                                id="first-name">
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <button id="submit" type="submit">Sign up for notification</button>
-                    </fieldset>
-                </form>
+            <div class="done">
+                <p class="joke">Thank you! Your email has been sent!
+                </p>
+                <p id="first">Name Placeholder</p>
+                <p id="email">Email Placeholder</p>
             </div>
+        </main>
         </main>
         <footer>
             <div class="copyright">
@@ -77,7 +56,6 @@
                 <span>* Secret Doughnut *</span>
                 <span>USA</span>
                 <p id="lastModified">Last Modified</p>
-                <p>Email: purpletoy23@gmail.com</p>
             </div>
         </footer>
         <dialog id="details" class="details">

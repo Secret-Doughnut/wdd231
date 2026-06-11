@@ -3,6 +3,7 @@ const navigation = document.querySelector('#navigation');
 const currentyear = document.querySelector('#currentyear');
 const modified = document.querySelector('#lastModified');
 const visit = document.querySelector('#visit');
+const submit = document.querySelector('#submit');
 
 const today = new Date();
 

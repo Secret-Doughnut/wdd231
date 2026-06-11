@@ -1,0 +1,227 @@
+* {
+    font-family: "roboto", sans-serif;
+}
+
+/******************************* Header ***********************/
+
+header {
+    padding: 25px 25px 15px 15px;
+    display: flex;
+    background-color: #722e2e;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+header h2 {
+    font-size: 30px;
+    color: #bed3d8;
+}
+
+header button {
+    width: 3rem;
+    height: auto;
+    align-self: center;
+    margin-left: auto;
+}
+
+/******************************* Hamburger ***********************/
+
+#hamburger {
+    background: none;
+    border: none;
+    color: #bed3d8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hamburger::before {
+    content: "\2630";
+    font-size: 3rem;
+}
+
+#hamburger.show::before {
+    content: "\00D7";
+    font-size: 3rem;
+}
+
+/******************************* Nav Bar ***********************/
+
+#navigation {
+    display: none;
+}
+
+#navigation.show {
+    display: block;
+}
+
+#navigation a.visited {
+    color: #675fb3;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation a {
+    display: block;
+    font-size: 10vw;
+    color: #d0e5eb;
+    text-decoration: none;
+    border-bottom: solid 2px #080714;
+    background-color: #675fb3;
+    padding: 1rem 75px;
+}
+
+#navigation li.current a {
+    background-color: #4c4877;
+    pointer-events: none;
+}
+
+#navigation a:hover {
+    background-color: #232035;
+}
+
+/******************************* Note ***********************/
+
+section {
+    justify-self: center;
+    max-width: 550px;
+    font-size: x-large;
+    background-color: rgb(159, 221, 241);
+}
+
+section h2 {
+    justify-self: center;
+    padding: 20px;
+}
+
+section p {
+    padding: 30px;
+    padding-top: 2px;
+    text-align: center;
+}
+
+/******************************* Main ***********************/
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: #232035;
+}
+
+.main-form {
+    border: 2px black solid;
+    background-color: #f0cdcd;
+    width: 90%;
+    max-width: 440px;
+    justify-self: center;
+    justify-items: center;
+}
+
+.main-form fieldset {
+    border: none;
+}
+
+.main-form input {
+    min-width: 200px;
+    min-height: 30px;
+}
+
+.main-form span {
+    display: block;
+}
+
+.main-form button {
+    height: 48px;
+    font-size: 20px;
+}
+
+/******************************* Footer ***********************/
+
+.copyright {
+    font-size: 20px;
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+    background-color: #c2c1c1;
+    margin-top: 50px;
+    color: #232035;
+}
+
+#visit {
+    max-width: 80%;
+    justify-self: center;
+}
+
+/******************************* Thanks ***********************/
+
+.done {
+    background-color: rgba(144, 238, 144, 0.582);
+    font-size: 18px;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+.done p {
+    justify-self: center;
+    padding-bottom: 20px;
+}
+
+.joke {
+    padding-top: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+
+/******************************* Header ***********************/
+    
+    header, #hello, main, nav, footer {
+        margin: 0 1rem;
+    }
+
+    header h2 {
+        font-size: 30px;
+        padding: 0;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    /******************************* Nav Bar ***********************/
+
+    #hello {
+        display: flex;
+        flex-direction: row;
+        background-color: #722e2e;
+    }
+
+    #navigation {
+        align-self: center;
+        margin-left: auto;
+        display: block;
+    }
+
+    #navigation a {
+        padding: 0 1px;
+        background: none;
+        border: none;
+        font-size: 30px;
+    }
+
+    #navigation ul {
+        display: flex;
+    }
+
+    #navigation ul li {
+        padding: 20px;
+    }
+
+    #navigation .current a {
+        background: none;
+        border-bottom: solid #bed3d8 2px;
+    }
+}

@@ -1,5 +1,5 @@
 * {
-    font-family: "roboto";
+    font-family: "roboto", sans-serif;
 }
 
 /******************************* Header ***********************/
@@ -17,7 +17,6 @@ header img {
 
 header h2 {
     font-size: 30px;
-    font-family: "roboto" sans-serif;
     color: #bed3d8;
 }
 

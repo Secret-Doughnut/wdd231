@@ -23,70 +23,67 @@
 </head>
 
 <body>
-
-    <body>
-        <div id="hello">
-            <header>
-                <img src="images/bunny.svg" alt="Bunny icon">
-                <h2>Animal Facts</h2>
-                <button aria-label="hamburger menu" id="hamburger"></button>
-            </header>
-            <nav id="navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="bunnyfacts.html">Bunny</a></li>
-                    <li><a href="snakefacts.html">Snake</a></li>
-                </ul>
-            </nav>
+    <div id="hello">
+        <header>
+            <img src="images/bunny.svg" alt="Bunny icon" width="20px" height="20px">
+            <h2>Animal Facts</h2>
+            <button aria-label="hamburger menu" id="hamburger"></button>
+        </header>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bunnyfacts.html">Bunny</a></li>
+                <li><a href="snakefacts.html">Snake</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Email Notification</h1>
+        <section>
+            <h2>Please Note</h2>
+            <p>This website was made for a collage assignment. This website is probably not getting updated in the
+                future. We won't actually receive your email. I wish you good luck with finding cool animal facts!</p>
+        </section>
+        <div class="join">
+            <form method="get" action="thankyou.html" class="main-form">
+                <fieldset>
+                    <label for="email">
+                        <span>Email Address</span>
+                        <input type="text" name="emailad" id="email"
+                            title="This is to send an email to let you know that we have added some new facts."
+                            required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="first-name">
+                        <span>Name (optional)</span>
+                        <input type="text" name="givenname"
+                            title="This would be used as a little personalization thing. Like, to have 'Hello [name]! We have updated the site'"
+                            id="first-name">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <button id="submit" type="submit">Sign up for notification</button>
+                </fieldset>
+            </form>
         </div>
-        <main>
-            <h1>Email Notification</h1>
-            <section>
-                <h2>Please Note</h2>
-                <p>This website was made for a collage assignment. This website is probably not getting updated in the
-                    future. We won't actually receive your email. I wish you good luck with finding cool animal facts!</p>
-            </section>
-            <div class="join">
-                <form method="get" action="thankyou.html" class="main-form">
-                    <fieldset>
-                        <label for="email">
-                            <span>Email Address</span>
-                            <input type="text" name="emailad" id="email"
-                                title="This is to send an email to let you know that we have added some new facts."
-                                required>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="first-name">
-                            <span>Name (optional)</span>
-                            <input type="text" name="givenname"
-                                title="This would be used as a little personalization thing. Like, to have 'Hello [name]! We have updated the site'"
-                                id="first-name">
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <button id="submit" type="submit">Sign up for notification</button>
-                    </fieldset>
-                </form>
-            </div>
-        </main>
-        <footer>
-            <div class="copyright">
-                <p id="visit">Thank you for checking out our site!</p>
-                <span id="currentyear">©202X</span>
-                <span>* Secret Doughnut *</span>
-                <span>USA</span>
-                <p id="lastModified">Last Modified</p>
-                <p>Email: purpletoy23@gmail.com</p>
-            </div>
-        </footer>
-        <dialog id="details" class="details">
-            <button id="close">X</button>
-            <h2>Title Placeholder</h2>
-            <p><a id="source">Source Placeholder</a></p>
-            <p><a id="credit">Credit Placeholder</a></p>
-        </dialog>
-    </body>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p id="visit">Thank you for checking out our site!</p>
+            <span id="currentyear">©202X</span>
+            <span>* Secret Doughnut *</span>
+            <span>USA</span>
+            <p id="lastModified">Last Modified</p>
+            <p>Email: purpletoy23@gmail.com</p>
+        </div>
+    </footer>
+    <dialog id="details" class="details">
+        <button id="close">X</button>
+        <h2>Title Placeholder</h2>
+        <p><a id="source">Source Placeholder</a></p>
+        <p><a id="credit">Credit Placeholder</a></p>
+    </dialog>
 </body>
 
 </html>
